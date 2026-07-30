@@ -54,14 +54,13 @@ public class Player extends Entity {
     }
 
     public void draw(Graphics2D g2) {
-        BufferedImage image = down;
-        switch (direction) {
-            case "up" -> image = up;
-            case "down" -> image = down;
-            case "right" -> image = right;
-            case "left" -> image = left;
-            default -> image = down;
-        }
+        BufferedImage image = switch (direction) {
+            case "up" -> up;
+            case "down" -> down;
+            case "right" -> right;
+            case "left" -> left;
+            default -> down;
+        };
 
         if (image != null) {
             g2.drawImage(image, x, y, gp.tileSize, gp.tileSize, null);
