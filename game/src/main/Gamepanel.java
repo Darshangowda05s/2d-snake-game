@@ -1,4 +1,4 @@
-package mainn;
+package main;
 import entity.Player;
 import java.awt.Color;
 import java.awt.Dimension;
