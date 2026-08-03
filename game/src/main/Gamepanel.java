@@ -1,9 +1,6 @@
 package main;
 import entity.Player;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import java.awt.*;
 import javax.swing.JPanel;
 public class Gamepanel extends JPanel implements Runnable {
     final int originalTileSize=16;  //16x16 tile
@@ -15,8 +12,8 @@ public class Gamepanel extends JPanel implements Runnable {
     final int maxScreenCol=16;
     final int maxScreenRow=14;
 
-    final int screenWidth=tileSize*maxScreenCol;  //width 768 px
-    final int screenHeight=tileSize*maxScreenRow; //height 576 px
+    public final int screenWidth=tileSize*maxScreenCol;  //width 768 px
+    public final int screenHeight=tileSize*maxScreenRow; //height 576 px
 
     KeyHandler keyH=new KeyHandler();
 
