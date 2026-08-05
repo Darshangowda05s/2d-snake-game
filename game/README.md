@@ -47,3 +47,5 @@ You can also run it from VS Code by opening the Main class and using the Java ru
 - The game window is fixed-size and currently runs in a simple top-down style.
 - The player sprite and body images are loaded from the resources folder under src/resources/player.
 - If image files are missing, the game will fall back to simple colored drawing.
+
+
